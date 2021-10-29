@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --black-color: #000000;
+  --bg-color: #0d0d0d;
+  --red-color: #db0000;
+  --text-color: #ffffff;
+  --dark-liver-color: #564d4d;
+  --crimson-red-color: #831010;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: calc(2vmin + 4px);
+}
+
+#header {
+  background-color: var(--black-color);
+  display: flex;
+  align-items: center;
+  padding: 1em 3em;
+}
+
+@media screen and (max-width: 1062px) {
+  #header {
+    padding: 0.8em 3em;
+  }
+
+  #header .title {
+    font-size: calc(2vmin + 16px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #header .title {
+    display: none;
+  }
+}
+
+#header .title {
+  color: var(--red-color);
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    margin-left: 0;
+  }
+}
+
+.nav-left-side a {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 886px) {
+  .nav-left-side {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav-right-side {
+  display: flex;
+}
+
+.nav-right-side span {
+  margin: 0 10px;
+}
+.nav-right-side span img {
+  color: #fff;
+}
+.nav-right-side div {
+  margin: 0 10px;
+}
+.nav-right-side select {
+  margin-left: 10px;
+}
+
+/* Main */
+.main {
+  padding: 1.2em 2em;
+}
+
+/* Section */
+.naruto {
+  font-size: calc(2vmin + 4px);
+  margin-bottom: 0.5em;
+}
+
+.section {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+/* Carousel */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
