@@ -1,7 +1,7 @@
 ## Clone Netflix Homepage
 ### Ou quase isso.
 
-### Link do surge
+### Link
 [Netflix Homepage](https://mean-fifth.surge.sh/)
 
 
